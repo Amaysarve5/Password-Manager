@@ -15,7 +15,6 @@ PassOp is a full-stack password manager application with a React + Vite + Tailwi
 ```
 Password_manager-mongo/
 ├── backend/
-│   ├── .env
 │   ├── package.json
 │   └── server.js
 ├── Frontend/
@@ -61,8 +60,7 @@ Password_manager-mongo/
    ```sh
    npm install
    ```
-3. Create a `.env` file with your MongoDB URI and port (see `.env` example in repo).
-4. Start the backend server:
+3. Start the backend server:
    ```sh
    node server.js
    ```
@@ -89,7 +87,6 @@ Password_manager-mongo/
 - Open the frontend in your browser.
 - Add, edit, or delete passwords.
 - All data is stored in MongoDB Atlas via the backend API.
-
 ## Author
 
 - [Amay Sarve](https://github.com/Amaysarve5)
