@@ -102,7 +102,7 @@ const Manager = () => {
                     Pass<span className="text-purple-400">Op/</span>
                     <span className="text-purple-400">&gt;</span>
                 </div>
-                <p className="text-green-700 text-base sm:text-lg text-center">
+                <p className="text-purple-700 text-base sm:text-lg text-center">
                     Your Own password manager
                 </p>
 
@@ -110,7 +110,7 @@ const Manager = () => {
                 <div className="text-white flex flex-col mt-6 items-center gap-4">
                     <input
                         value={form.site} onChange={handlechange} name='site'
-                        className="rounded-full border border-green-500 w-full sm:w-3/4 lg:w-1/2 p-2 px-4 text-black"
+                        className="rounded-full border border-purple-500 w-full sm:w-3/4 lg:w-1/2 p-2 px-4 text-black"
                         type="text"
                         placeholder="Enter website"
                     />
@@ -118,24 +118,24 @@ const Manager = () => {
                     <div className="flex flex-col md:flex-row gap-3 w-full sm:w-3/4 lg:w-1/2">
                         <input
                             value={form.username} onChange={handlechange} name='username'
-                            className="rounded-full border border-green-500 w-full p-2 px-4 text-black"
+                            className="rounded-full border border-purple-500 w-full p-2 px-4 text-black"
                             type="text"
                             placeholder="Enter username"
                         />
                         <div className="relative w-full">
                             <input
                                 value={form.password} onChange={handlechange} name='password'
-                                className="rounded-full border border-green-500 w-full p-2 px-4 text-black pr-12"
+                                className="rounded-full border border-purple-500 w-full p-2 px-4 text-black pr-12"
                                 type="password" ref={passwordref}
                                 placeholder="Enter password"
                             />
-                            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-green-600 cursor-pointer" onClick={showpassword}>
+                            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-purple-600 cursor-pointer" onClick={showpassword}>
                                 <img src="Icons/eye.svg" ref={ref} alt="show password" className="w-5 h-5" />
                             </span>
                         </div>
                     </div>
 
-                    <button onClick={savePassword} className="rounded-full border border-green-500 bg-green-300 font-bold px-6 py-2 mt-4 flex gap-2 text-black items-center hover:bg-green-500 hover:text-white transition duration-300">
+                    <button onClick={savePassword} className="rounded-full border border-purple-500 bg-purple-300 font-bold px-6 py-2 mt-4 flex gap-2 text-black items-center hover:bg-purple-500 hover:text-white transition duration-300">
                         <animated-icons
                             src="https://animatedicons.co/get-icon?name=Plugin&style=minimalistic&token=c35872bb-2ea9-4cf2-857b-d402cb8bb06e"
                             trigger="hover"
@@ -149,12 +149,12 @@ const Manager = () => {
                 {/* Passwords table */}
                 <div className="passwords mt-10">
                     <h2 className='font-bold py-4 text-xl sm:text-2xl'>Your Passwords</h2>
-                    {passwordArray.length === 0 && <p className='text-green-700'>No passwords saved yet.</p>}
+                    {passwordArray.length === 0 && <p className='text-purple-700'>No passwords saved yet.</p>}
 
                     {passwordArray.length !== 0 &&
                         <div className="overflow-x-auto">
                             <table className="table-auto w-full rounded-md overflow-hidden text-xs sm:text-sm md:text-base">
-                                <thead className="bg-green-500 text-white">
+                                <thead className="bg-purple-500 text-white">
                                     <tr>
                                         <th className='py-1 px-1 sm:py-2 sm:px-2 border border-white'>Site</th>
                                         <th className='py-1 px-1 sm:py-2 sm:px-2 border border-white'>Username</th>
@@ -162,7 +162,7 @@ const Manager = () => {
                                         <th className='py-1 px-1 sm:py-2 sm:px-2 border border-white'>Actions</th>
                                     </tr>
                                 </thead>
-                                <tbody className='text-center bg-green-100'>
+                                <tbody className='text-center bg-purplr-100'>
                                     {passwordArray.map((item, index) => {
                                         return <tr key={index} className="text-xs sm:text-sm md:text-base">
                                             <td className='py-1 px-1 sm:py-2 sm:px-2 flex items-center justify-center border border-white text-blue-500 whitespace-nowrap'>
