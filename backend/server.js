@@ -14,8 +14,8 @@ mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-.then(() => console.log("✅ Connected to MongoDB Atlas"))
-.catch(err => console.error("❌ MongoDB connection error:", err));
+.then(() => console.log("Connected to MongoDB Atlas"))
+.catch(err => console.error("MongoDB connection error:", err));
 
 // Schema + Model
 const passwordSchema = new mongoose.Schema({
